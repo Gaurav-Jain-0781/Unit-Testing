@@ -22,3 +22,5 @@ class Test_Request(TestCase):
         with patch("requests.get", return_value=fake_response()):
             result = self.page.get()
             self.assertEqual(result, fake_content)
+
+
